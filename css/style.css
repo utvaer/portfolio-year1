@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+aside,
+article,
+section,
+header,
+footer,
+nav,
+form {
+  display: block;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: palevioletred;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+}
+
+.links-container {
+  display: flex;
+  margin: 2em auto;
+}
+.link {
+  padding: 2em;
+  font-size: 3em;
+}
