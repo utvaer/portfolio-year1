@@ -15,30 +15,135 @@ nav,
 form {
   display: block;
 }
-html,
-body {
+html {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #d87093;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #fff;
+  background-color: rgba(216, 112, 147, 0.4);
+  font-family: "Playfair Display", Georgia, serif;
+  color: #111;
 }
 h1 {
   text-align: center;
+  font-size: 3em;
+  background-color: #5ad8ae;
+  margin-top: 0;
 }
-
+h2 {
+  text-align: center;
+  font-family: "Alfa Slab One", cursive;
+}
+h3 {
+  background-color: rgba(216, 112, 147, 0.7);
+  padding: 0.5em;
+  text-transform: uppercase;
+}
 .links-container {
   display: flex;
-  margin: 2em auto;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid black;
 }
 .link {
-  margin: 2em;
-  font-size: 3em;
+  font-family: "Alfa Slab One", cursive;
+  margin: 2em auto;
+  flex-grow: 1;
   text-decoration: none;
   color: #111;
   cursor: pointer;
   padding: 0.5em;
   border-radius: 2px;
   box-shadow: rgba(207, 92, 134, 0.9) 0px 48px 100px 0px;
+}
+.intro {
+  font-size: 1.2em;
+}
+.sections-container {
+  margin-bottom: 2em;
+}
+.section {
+  background-color: #a1dfca;
+  padding: 1em;
+}
+.site-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.site-links a {
+  color: #111;
+  cursor: pointer;
+}
+
+/*________________________MOBILE______________________________________________*/
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    padding: 1em;
+  }
+  .links-container {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+  }
+  .link {
+    max-width: 80%;
+    text-align: center;
+    font-size: 2em;
+  }
+  .intro {
+    max-width: 90%;
+    margin: 1em auto;
+  }
+  .section {
+    max-width: 100%;
+    margin: 1em auto;
+  }
+}
+/*________________________TABLET______________________________________________*/
+@media only screen and (min-width: 768px) {
+  h1 {
+    padding: 2em;
+  }
+  .links-container {
+    flex-direction: row;
+    margin: 2em;
+  }
+  .link {
+    max-width: 30%;
+    font-size: 2em;
+    margin: 1em auto;
+  }
+  .intro {
+    max-width: 70%;
+    margin: 2em auto;
+  }
+  .section {
+    max-width: 80%;
+    margin: 1em auto;
+  }
+}
+/*________________________DESKTOP______________________________________________*/
+@media only screen and (min-width: 1024px) {
+  h1 {
+    padding: 4em;
+    max-height: 800px;
+    letter-spacing: 0.3em;
+  }
+  .link {
+    max-width: 20%;
+    margin: 2em auto;
+    font-size: 2.5em;
+  }
+  .intro {
+    max-width: 50%;
+    margin: 3em auto;
+  }
+  .section {
+    max-width: 60%;
+    margin: 1em auto;
+  }
+  .site-links {
+    justify-content: space-evenly;
+  }
 }

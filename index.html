@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Utvaer | Portfolio</title>
 </head>
@@ -12,31 +15,75 @@
     <header>
         <h1>Utv&aelig;r Portfolio</h1>
         <div class="links-container">
-            <a href="#csm" class="link">CSM</a>
+            <a href="#csm" class="link">Community Science Museum</a>
             <a href="#re-cycle" class="link">Re-CyCle</a>
             <a href="#pt" class="link">Passport Tales</a>
         </div>
         
     </header>
     <main>
-        <div id="csm section">
-            <h2>Community Science Museum</h2>
-            <p>February 2021</p>
-            <p></p>
-        </div>
-        <div id="re-cycle section">
-            <h2>Re-CyCle</h2>
-            <p>March 2020/May 2021/August 2021</p>
-        </div>
-        <div id="pt section">
-            <h2>Passport Tales</h2>
-            <p>September 2021</p>
+        <p class="intro">After two weeks, the main takeaways are: visual hierarchy, consistency, cleaner footers & unsuccessful changes</p>
+        <div class="sections-container">
+            <div class="section">
+                <h2 id="csm">Community Science Museum</h2>
+                <p>Timeframe: February 2021/October 2021</p>
+                <div class="site-links">
+                    <a href="https://linnscape.com/csm/" target="_blank">Website</a>
+                    <a href="https://github.com/utvaer/semester-project1" target="_blank">Github</a>
+                </div>
+                <h3>Changes</h3>
+                <ul class="changes-list">
+                    <li>layout issues</li>
+                    <li>visibility</li>
+                    <li>overall consistency</li>
+                </ul>
+                <h3>How & Why</h3>
+                <div class="overview">
+                    <p>With css, I fixed layout issues that made the page a bit off.</p>
+                    <p>Based on feedback, I fixed some visibility issues. The contact page was altered to fit the overall feel of the website.</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 id="re-cycle">Re-CyCle</h2>
+                <p>Timeframe: March 2020/May 2021/August 2021/October 2021</p>
+                <div class="site-links">
+                    <a href="https://linnscape.com/re-cycle/" target="_blank">Website</a>
+                    <a href="https://github.com/utvaer/cross.course-project1" target="_blank">Github</a>
+                </div>
+                <h3>Changes</h3>
+                <ul class="changes-list">
+                    <li>homepage visual hierarchy</li>
+                    <li>added javascript to the tours overview</li>
+                    <li>headings consistency</li>
+                </ul>
+                <h3>How & Why</h3>
+                <div class="overview">
+                    <p>Based on feedback and personal ideas looking back, I decided to readjust the overall feel with a focus on consistency across the pages. This was largely achieved with css.</p>
+                    <p>The tours on the homepage were removed from hardcoded html and replaced with the api call. A loader was added.</p>
+                    <p>Pieces from the homepage were rearranged in order to make the page simpler.</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 id="pt">Passport Tales</h2>
+                <p>Timeframe: September 2021/October 2021</p>
+                <div class="site-links">
+                    <a href="https://linnscape.com/blog/" target="_blank">Website</a>
+                    <a href="https://github.com/utvaer/exam1-updates" target="_blank">Github</a>
+                </div>
+                <h3>Changes</h3>
+                <ul class="changes-list">
+                    <li>minor styling issues</li>
+                    <li>level II was <em>not</em> achieved</li>
+                </ul>
+                <h3>How & Why</h3>
+                <div class="overview">
+                    <p>I changed the image size and color opacity of the blogposts cards.</p>
+                    <p>This was probalby the most time-consuming and frustrating effort of the two weeks, with no results to show for. I stubbornly wanted to manage posting comments and messages to the wp rest api, but after falling in a rabbit hole, I never made it out.</p>
+                </div>
+            </div>
         </div>
 
     </main>
-    <footer>
-
-    </footer>
     <script src="js/index.js"></script>
 </body>
 </html>
